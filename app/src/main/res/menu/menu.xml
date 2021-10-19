@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:title="Home"
+            android:icon="@drawable/homeicon">
+        </item>
+
+        <item
+            android:id="@+id/adduser"
+            android:title="Add User"
+            android:icon="@drawable/adduser">
+        </item>
+
+        <item
+            android:id="@+id/history"
+            android:title="Transcation History"
+            android:icon="@drawable/history">
+        </item>
+
+        <item
+            android:id="@+id/exit"
+            android:title="Exit App"
+            android:icon="@drawable/exitapp">
+        </item>
+
+    </group>
+</menu>

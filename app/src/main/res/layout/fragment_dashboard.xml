@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DashboardFragment"
+    android:background="#F5FCFF">
+
+    <TextView
+        android:id="@+id/dashboardText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15sp"
+        android:textColor="@color/black"
+        android:text="Select To See Customer's Details"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/layout_bg2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/dashboardText"
+        android:id="@+id/DashboardRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

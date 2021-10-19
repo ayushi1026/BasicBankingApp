@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity2">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:background="@color/teal_700"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbarLayout">
+
+        <ImageView
+            android:id="@+id/ImageActivity"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/imgayu"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageActivity"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/layout_bg2">
+
+
+            <TextView
+                android:id="@+id/NameActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Ayushi Mishra"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/PhoneActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NameActivity"
+                android:layout_centerHorizontal="true"
+                android:text="Mobile: 8876212345"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textColor="#357a38"/>
+
+            <TextView
+                android:id="@+id/EmailActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: am@gmail.com"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/PhoneActivity"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/AddressActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: Nagpur, Maharashtra"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/EmailActivity"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/CurrentBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Balance: Rs 10000"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/AddressActivity"
+                android:textSize="22sp"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:padding="10sp"/>
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="180dp"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/black">
+
+
+            <Button
+                android:id="@+id/NextButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="20sp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/next_icon" />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

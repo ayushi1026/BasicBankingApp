@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/DashboardImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/imgayu"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/ProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/CardView"
+            android:text="Hello Everyone"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/EmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="am@gmail.com"
+            android:layout_toRightOf="@id/CardView"
+            android:layout_below="@id/ProfileName"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/PhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8876212345"
+            android:layout_toRightOf="@id/CardView"
+            android:layout_below="@+id/EmailAddress"
+            android:layout_marginTop="12dp"
+            android:textSize="15sp"
+            android:textColor="#357a38"/>
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/CardView"
+            android:layout_below="@id/PhoneNumber"
+            android:layout_marginTop="12dp"
+            android:text="Gender: Female"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

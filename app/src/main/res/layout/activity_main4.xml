@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity4">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amoutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Amount"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amoutText"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/layout_bg2"
+            android:layout_marginRight="10dp"
+            android:padding="10sp"
+            android:hint="Rs 100"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAmount"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:padding="10sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ImageTranscation"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/oksymbol"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/TransText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transcation Complete"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ImageTranscation"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TransText"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/layout_bg2">
+
+            <TextView
+                android:id="@+id/TransName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sender: Ayushi Mishra"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:padding="10sp"/>
+
+            <TextView
+                android:id="@+id/TransName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receiver: Ayushi Mishra"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:padding="10sp"
+                android:layout_below="@id/TransName1"/>
+
+            <TextView
+                android:id="@+id/TransAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount: Rs 1000"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="10dp"
+                android:padding="10sp"
+                android:layout_below="@id/TransName2"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout3"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Done!"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:padding="10sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

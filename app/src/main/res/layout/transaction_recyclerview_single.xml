@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/TransactionImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/oksymbol"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/SenderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/CardView"
+            android:text="Sender: Ayushi Mishra"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/ReceiverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiver: Yugant Gholase"
+            android:layout_toRightOf="@id/CardView"
+            android:layout_below="@id/SenderText"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/AmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount: Rs 1000"
+            android:layout_toRightOf="@id/CardView"
+            android:layout_below="@+id/ReceiverText"
+            android:padding="10sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
